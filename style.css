@@ -1,0 +1,228 @@
+* {
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* #iPad {
+}
+#iPhoneX {
+}
+
+#MacBookAir {
+} */
+
+.bg-blue {
+  background: #638caa;
+  width: 100%;
+}
+
+.bg-white {
+  background: #dbdbdb;
+}
+
+.bg-brown {
+  background: #bcb9aa;
+}
+
+.bg-green {
+  background: #9ce0d1;
+}
+
+.bg-purple {
+  background: #9aa7b8;
+}
+.bg-blue1 {
+  background: #b7ced6;
+}
+
+.bg-orange {
+  background: #f09e84;
+}
+
+.bg-last {
+  background: #514354;
+}
+
+a {
+  text-transform: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* From here i have written css for the First-content  */
+/* .inline {
+  display: flex;
+} */
+
+.topnav {
+  float: right;
+  width: auto;
+  margin-right: 10%;
+  padding-top: 20px;
+  word-spacing: 10px;
+}
+
+.nav:hover {
+  color: orange;
+}
+
+.apple {
+  width: auto;
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.fa-brands {
+  font-size: 40px;
+}
+
+.devices {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  display: block;
+  padding-bottom: 7px;
+}
+
+/* This here is for the second part where i write for second content, icon with different bg colors */
+
+.text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.padding {
+  padding: 10px 43%;
+  font-size: 60px;
+}
+
+.bg-first {
+  width: 25%;
+  float: left;
+  background-color: #dbdbdb;
+}
+
+.bg-second {
+  width: 25%;
+  background-color: #bcb9aa;
+  float: left;
+}
+
+.bg-third {
+  width: 25%;
+  background-color: #9ce0d1;
+  float: left;
+}
+
+.bg-forth {
+  width: 25%;
+  background-color: #9aa7b8;
+  float: left;
+}
+
+/* here i finished with the second-content */
+
+/* so lets start with third-content also (forth and fifth are very similar or we can say that they are same just with some bg-color changes) */
+
+.iPad {
+  float: left;
+  width: 50%;
+}
+
+.iPad-1 {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.text-iPad {
+  display: inline-block;
+  width: 50%;
+  height: 260px;
+  padding-top: 20px;
+}
+
+.text-color {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+/* here is the css for sixth content, it is similar to second content */
+h2 {
+  text-align: center;
+  color: black;
+}
+
+.pd {
+  padding-top: 15px;
+  height: max-content;
+}
+
+.bg-team {
+  width: 33.33%;
+  float: left;
+  background-color: #9aa7b8;
+}
+
+.bg-sallary {
+  width: 33.33%;
+  float: left;
+  background-color: #bcb9aa;
+}
+
+.bg-earnings {
+  width: 33.33%;
+  float: left;
+  background-color: #9ce0d1;
+}
+
+.text-align {
+  text-align: center;
+  color: white;
+}
+
+/* end of the sixth content */
+
+/* seventh content social-media */
+
+.sm {
+  font-size: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 60px 0;
+}
+/* finished seventh content */
+
+/* the last content */
+.last-content {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 8px;
+}
