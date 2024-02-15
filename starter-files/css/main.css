@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+}
+
+.menu {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  color: #666666;
+}
+@media (min-width: 2560px) {
+  .menu {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.menu .inner {
+  margin-left: 3.75rem;
+  margin-top: 1.875rem;
+}
+@media (max-width: 768px) {
+  .menu .inner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 0;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+.menu .inner .logo {
+  font-size: 1.875rem;
+  display: block;
+  padding-top: 1.875rem;
+}
+@media (min-width: 2560px) {
+  .menu .inner .logo {
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .menu .inner .logo {
+    padding: 5px 10px;
+    color: #a09d9d;
+  }
+}
+.menu .inner a {
+  text-decoration: none;
+  color: #666666;
+}
+.menu .inner ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2.25;
+  margin-top: 3.75rem;
+  margin-bottom: 7.5rem;
+}
+@media (min-width: 2560px) {
+  .menu .inner ul {
+    font-size: 30px;
+    margin-bottom: 300px;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .menu .inner ul {
+    display: none;
+  }
+}
+.menu .inner ul li:hover {
+  text-decoration: underline;
+}
+.menu .inner footer a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 2560px) {
+  .menu .inner footer {
+    margin-left: 100px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .menu .inner footer {
+    display: none;
+  }
+}
+.menu .inner .burger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu .inner .burger-menu {
+    font-size: 20px;
+    display: flex;
+    padding: 7px 8px;
+    color: #a09d9d;
+    background-color: #fff;
+    border: 1px solid rgba(160, 157, 157, 0.4588235294);
+    margin-right: 10px;
+  }
+}
+
+.main-content {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 288px;
+}
+@media (min-width: 2560px) {
+  .main-content {
+    padding-left: 512px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding-left: 0;
+  }
+}
+.main-content .content {
+  flex-basis: 33.33%;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 2560px) {
+  .main-content .content {
+    flex-basis: 33.33%;
+  }
+  .main-content .content img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .content {
+    width: 100%;
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 426px) {
+  .main-content .content {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .main-content .content {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .main-content .content {
+    flex-basis: 100%;
+  }
+}
+.main-content .content .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fff;
+}
+.main-content .content .inner-content:hover:hover .overlay {
+  opacity: 1;
+}
+.main-content .content .text {
+  color: #666666;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+@media (min-width: 2560px) {
+  .main-content .content .text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-content .content .text {
+    white-space: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .content .text {
+    white-space: nowrap;
+  }
+}/*# sourceMappingURL=main.css.map */

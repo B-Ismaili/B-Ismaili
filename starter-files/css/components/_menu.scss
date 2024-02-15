@@ -1,0 +1,110 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.menu {
+  background-color: var.$background-color-base;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  color: var.$text-color-menu;
+
+  @include mix.four-k-styles {
+    width: 20%;
+  }
+
+  @include mix.tablet-styles {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .inner {
+    margin-left: var.$gutter-base * 2;
+    margin-top: var.$gutter-base;
+    @include mix.tablet-styles {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 0;
+      margin-top: 0;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .logo {
+      font-size: var.$gutter-base;
+      display: block;
+      padding-top: var.$gutter-base;
+
+      @include mix.four-k-styles {
+        font-size: 50px;
+        margin-left: 100px;
+        margin-top: 150px;
+        margin-bottom: 200px;
+      }
+
+      @include mix.tablet-styles {
+        padding: 5px 10px;
+        color: var.$text-color-tablet;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var.$text-color-menu;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      line-height: var.$line-height-base * 1.5;
+      margin-top: var.$gutter-base * 2;
+      margin-bottom: var.$gutter-base * 4;
+
+      @include mix.four-k-styles {
+        font-size: 30px;
+        margin-bottom: 300px;
+        margin-left: 100px;
+      }
+
+      @include mix.tablet-styles {
+        display: none;
+      }
+
+      li:hover {
+        text-decoration: underline;
+      }
+    }
+    footer {
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @include mix.four-k-styles {
+        margin-left: 100px;
+        font-size: 20px;
+      }
+
+      @include mix.tablet-styles {
+        display: none;
+      }
+    }
+
+    .burger-menu {
+      display: none;
+
+      @include mix.tablet-styles {
+        font-size: 20px;
+        display: flex;
+        padding: 7px 8px;
+        color: var.$text-color-tablet;
+        background-color: var.$background-color-base;
+        border: 1px solid var.$text-color-burger-border;
+        margin-right: 10px;
+      }
+    }
+  }
+}
