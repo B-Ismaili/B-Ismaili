@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header bg-warning justify-content-between py-1">
+      <div class="row logo">
+        <a href="./index.html">
+          <img
+            class="image display-flex"
+            src="./design/Logo.png"
+            alt="logo" /></a
+        ><a class="logo text-uppercase text-decoration-none" href="./index.html"
+          >Brainster</a
+        >
+      </div>
+
+      <div class="navigation text-center">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="hamburger"></div>
+        <ul class="menu py-2 px-2">
+          <li>
+            <a
+              aria-current="page"
+              href="https://brainster.co/marketing/"
+              target="_blank"
+              >Академија за маркетинг</a
+            >
+          </li>
+          <li>
+            <a href=" https://brainster.co/full-stack/" target="_blank"
+              >Академија за програмирање</a
+            >
+          </li>
+          <li>
+            <a href=" https://brainster.co/data-science/" target="_blank"
+              >Академија за data science</a
+            >
+          </li>
+          <li>
+            <a href=" https://brainster.co/graphic-design/" target="_blank"
+              >Академија за дизајн</a
+            >
+          </li>
+          <li>
+            <a class="btn btn-danger text-white py-3 px-3" href="./form.html">
+              Вработи наш студент</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="banner bg-image">
+      <div class="container-fluid">
+        <h1
+          class="text-capitalize w-100 d-flex justify-content-center align-items-center square-box"
+        >
+          brainster labs
+        </h1>
+      </div>
+    </div>
+
+    <div class="filter">
+      <div class="container-fluid p-0 d-flex justify-content-center">
+        <div class="row">
+          <div class="col-12 col-md-12 col-md-6 col-lg-4">
+            <button
+              class="text-decoration-none text-white mx-auto"
+              id="filter-marketing"
+            >
+              Проекти на студенти во академија <br />
+              за маркетинг<i class="fa-solid fa-circle-check text-fluid"></i>
+            </button>
+          </div>
+          <div class="col-12 col-md-12 col-md-6 col-lg-4">
+            <button
+              class="text-decoration-none text-white mx-auto"
+              id="filter-programming"
+            >
+              Проекти на студенти во академија <br />
+              за програмирање<i class="fa-solid fa-circle-check text-fluid"></i>
+            </button>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <button
+              class="text-decoration-none text-white mx-auto"
+              id="filter-design"
+            >
+              Проекти на студенти во академија <br />
+              за дизајн<i class="fa-solid fa-circle-check text-fluid"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects bg-warning py-5">
+      <h2 class="text-capitalize text-dark py-4 w-100">Проекти</h2>
+      <div class="container">
+        <div class="row gy-4 gx-1 mx-auto">
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_0B2NQBESQI.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_64EKVZ4V2B.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_8X6QDD1S5F.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_9EJOFXLU6M.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_A28WZDTYEY.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_AJKG33O1ZY.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_FVWLQXWZ1P.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_H6PSN9BPGZ.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_JLRCGJRKYJ.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d programming">
+            <div class="card">
+              <img
+                src="./card-img/programming/StockSnap_RMVMI0VFZ3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Програмирање</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d marketing">
+            <div class="card">
+              <img
+                src="./card-img/marketing/StockSnap_3M1WKORDOL.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Маркетинг</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d marketing">
+            <div class="card">
+              <img
+                src="./card-img/marketing/StockSnap_72V88M4FAC.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Маркетинг</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d marketing">
+            <div class="card">
+              <img
+                src="./card-img/marketing/StockSnap_9699Y6WKLD.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Маркетинг</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d marketing">
+            <div class="card">
+              <img
+                src="./card-img/marketing/StockSnap_AEENLCARXY.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Маркетинг</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d marketing">
+            <div class="card">
+              <img
+                src="./card-img/marketing/StockSnap_MEMYJEJ4VB.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Маркетинг</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d marketing">
+            <div class="card">
+              <img
+                src="./card-img/marketing/StockSnap_UW8AKAGQI3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Маркетинг</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d design">
+            <div class="card">
+              <img
+                src="./card-img/design/StockSnap_JPZDGEMDH3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Дизајн</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d design">
+            <div class="card">
+              <img
+                src="./card-img/design/StockSnap_QIHKAT5PBZ.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Дизајн</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d design">
+            <div class="card">
+              <img
+                src="./card-img/design/StockSnap_UFDTNK6BWQ.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Дизајн</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d design">
+            <div class="card">
+              <img
+                src="./card-img/design/StockSnap_WVOFS2IY4Y.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-end">
+                <div class="text-start">
+                  <p class="bg-warning px-2 py-1">Академија за Дизајн</p>
+                  <h5 class="card-title">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text text-start">
+                    Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.
+                  </p>
+                  <p class="text-capitalize py-2">
+                    <strong class="py-md-3">Фебруари - Марс 2024</strong>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger py-2 px-md-3 px-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-menu text-center py-1">
+      <div class="container text-white">
+        <p>Изработено со ❤️ од Буњамин Исмаили</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector("#filter-programming")
+        .addEventListener("click", filterProgramming);
+      document
+        .querySelector("#filter-marketing")
+        .addEventListener("click", filterMarketing);
+      document
+        .querySelector("#filter-design")
+        .addEventListener("click", filterDesign);
+
+      function filterProgramming() {
+        hideAllCards();
+
+        var programmingCards = document.querySelectorAll(".programming");
+        programmingCards.forEach((programmingCard) => {
+          programmingCard.style.display = "inline-block";
+        });
+      }
+      function filterMarketing() {
+        hideAllCards();
+
+        var marketingCards = document.querySelectorAll(".marketing");
+        marketingCards.forEach((marketingCard) => {
+          marketingCard.style.display = "inline-block";
+        });
+      }
+      function filterDesign() {
+        hideAllCards();
+
+        var designCards = document.querySelectorAll(".design");
+        designCards.forEach((designCard) => {
+          designCard.style.display = "inline-block";
+        });
+      }
+
+      function hideAllCards() {
+        var allCards = document.querySelectorAll(".card");
+
+        allCards.forEach((card) => {
+          card.style.display = "none";
+          // d.display = "none";
+        });
+      }
+      function hideAllCards() {
+        var allCards = document.querySelectorAll(".d");
+
+        allCards.forEach((d) => {
+          // card.style.display = "none";
+          d.style.display = "none";
+        });
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
