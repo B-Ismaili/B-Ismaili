@@ -1,0 +1,54 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 4rem 1rem;
+}
+
+.jumbotron img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+}
+
+ul.list-unstyled {
+  padding: 0;
+  list-style: none;
+}
+.contact-card {
+  margin-top: 50px;
+}
+.contact-card .card-header {
+  background-color: #f8f9fa;
+  color: black;
+}
+.contact-card .card-body a {
+  display: block;
+  margin-bottom: 10px;
+}
