@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Enter your details</h1>
+
+    <form action="{{ route('storeForm') }}" method="POST">
+        @csrf
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="{{ old('name') }}">
+            @error('name')
+            <span>{{ $message }}</span>
+            @enderror
+        </div>
+
+        <div>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" value="{{ old('surname') }}">
+            @error('surname')
+            <span>{{ $message }}</span>
+            @enderror
+        </div>
+
+        <div>
+            <label for="email">Email (optional):</label>
+            <input type="email" name="email" value="{{ old('email') }}">
+            @error('email')
+            <span>{{ $message }}</span>
+            @enderror
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    @if(session()->has('name'))
+    <form action="{{ route('clearSession') }}" method="POST">
+        @csrf
+        <button type="submit">Clear Session</button>
+    </form>
+    @endif
+</body>
+
+</html>
