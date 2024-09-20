@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+    overflow-y: auto; /* Changed to allow scrolling */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.background-image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered content inside the background */
+.centered-content {
+    text-align: center;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.centered-content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.centered-content h1,
+.centered-content p {
+    color: white !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 75%;
+    z-index: 100;
+}
+
+.navbar-left a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: silver;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+ul li a.active,
+ul li a.active:hover {
+    color: white;
+}
+
+.container-navbar {
+    background-color: #eee;
+}
+
+.container-navbar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid silver;
+    color: silver;
+    opacity: 0.5;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-links a:hover {
+    color: grey;
+}
+
+footer {
+    background: white;
+    color: silver;
+    text-align: center;
+    padding: 10px;
+}
+
+/* home-container */
+/* Container for posts */
+.home-container1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styling each post */
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+/* Post Title */
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Post excerpt */
+.post-excerpt {
+    font-size: 16px;
+    margin: 0 0 10px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Post meta (author and date) */
+.post-meta {
+    font-size: 14px;
+    color: #999;
+}
+
+.post-meta a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
+}
+
+.older-posts {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.btn-older-posts {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00b3b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn-older-posts:hover {
+    background-color: #09c5c5;
+}
+
+/* about-container1 */
+
+.about-container1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about {
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 10px;
+    line-height: 1.5;
+    color: #555;
+    padding: 10px;
+}
+
+/* blog-container */
+.blog-container1 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.blog {
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 10px;
+    line-height: 1.5;
+    color: #555;
+    padding: 10px;
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* contact-container */
+.contact-container1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: rgb(135, 133, 133);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 7px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.contact-form button {
+    background-color: #5bc0de;
+    width: 15%;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #31b0d5;
+}
