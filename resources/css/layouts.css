@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Layout */
+.dashboard-body {
+    background-color: #0f172a; /* Dark navy background */
+    font-family: "Roboto", sans-serif;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+/* Logo Styles */
+.navbar .logo-img {
+    height: 70px;
+    background: linear-gradient(
+        135deg,
+        #ff6f00,
+        #ff9f43
+    ); /* Gradient for elegance */
+    border-radius: 35%; /* Circular logo background */
+    padding: 12px; /* Space around the logo */
+    border: 1px solid #ffffff; /* White border for contrast */
+    box-shadow: 0 4px 10px rgba(255, 111, 0, 0.3); /* Orange glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .logo-img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(255, 111, 0, 0.5); /* Brighter glow on hover */
+}
+
+.navbar .btn {
+    color: #e2e8f0 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+    background-color: #ff6f00 !important; /* Orange hover effect */
+    border-radius: 5px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    background-color: rgba(255, 111, 0, 0.1); /* Orange highlight */
+}
+.card h5 {
+    color: #ff6f00 !important;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #f57c00; /* Primary orange */
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e65100; /* Slightly darker orange for hover */
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .logout-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}

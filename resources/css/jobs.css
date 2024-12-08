@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Container Styles */
+.container {
+    /* background: linear-gradient(135deg, #ffffff, #f7f7f7); Subtle gradient */
+    border-radius: 1rem;
+    /* padding: 2rem; */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+    font-family: "Roboto", sans-serif;
+}
+
+/* Title Styles */
+h1 {
+    color: #2f2f2f; /* Neutral dark for the title */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Classic touch */
+}
+
+/* Add New Job Button */
+.btn-primary {
+    background-color: #f57c00 !important;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #e65100; /* Darker orange on hover */
+}
+
+/* Table Styles */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.table thead {
+    background-color: #f57c00; /* Bold orange for header */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table thead th {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.table tbody tr:hover {
+    background-color: #ffe0b2; /* Subtle orange hover */
+}
+
+.table tbody td {
+    padding: 0.75rem;
+    text-align: center;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+/* Actions Buttons */
+.btn-actions .btn {
+    margin: 0 0.2rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-warning {
+    background-color: #ffa726;
+    border: none;
+    color: white;
+}
+.btn-warning:hover {
+    background-color: #f57c00;
+}
+
+.btn-danger {
+    background-color: #ef5350;
+    border: none;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c62828;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .btn-primary {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .table {
+        font-size: 0.8rem;
+    }
+    .table thead th,
+    .table tbody td {
+        padding: 0.5rem;
+    }
+}
+
+/* Update Button */
+.btn-primary {
+    background-color: #f57c00; /* Orange color */
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #e65100; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Add New Job Button */
+.btn-primary {
+    background-color: #f57c00;
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #e65100;
+}
+
+/* Success Message */
+.alert {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}

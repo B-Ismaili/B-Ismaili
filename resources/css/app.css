@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Theme */
+:root {
+    --primary-color: #f0573d;
+    --secondary-color: #1e1e2f;
+    --text-color: #ffffff;
+    --hover-color: #d94629;
+    --card-bg: #2a2a2a;
+    --btn-hover-color: #222233;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-bottom: 2px solid var(--hover-color);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+}
+
+/* Dropdown menu styles */
+.navbar .dropdown-menu {
+    background-color: #1e293b; /* Dark background for the dropdown */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #cbd5e1; /* Light gray text for visibility */
+    font-weight: 500; /* Slightly bolder text */
+    padding: 10px 15px; /* Add padding for better spacing */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: #ffffff; /* Bright white text on hover */
+    background-color: #ff6f00; /* Orange highlight */
+    border-radius: 3px; /* Add rounded corners on hover */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    min-height: 100vh;
+    border-right: 2px solid var(--hover-color);
+}
+
+.sidebar .nav-link {
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--hover-color);
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-danger:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.btn-warning {
+    background-color: #f7c948;
+    color: #000;
+}
+
+.btn-warning:hover {
+    background-color: #e8b435;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Table Styles */
+.table {
+    color: var(--text-color);
+    background-color: var(--card-bg);
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.table td {
+    color: var(--text-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--hover-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Additional Utilities */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
