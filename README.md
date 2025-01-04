@@ -1,4 +1,4 @@
-👋 Hello, I'm Bunjamin Ismaili!
+## **👋 Hello, I'm Bunjamin Ismaili!**
 
 🚀 **Full-Stack Developer** | 💻 PHP, Laravel, JavaScript, and More  
 🌐 **Creating dynamic and scalable web applications**  
