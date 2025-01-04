@@ -1,4 +1,4 @@
-![bg-1](https://github.com/user-attachments/assets/647de074-db0c-4647-b5dc-d72d3059558c)# 👋 Hello, I'm Bunjamin Ismaili!
+👋 Hello, I'm Bunjamin Ismaili!
 
 🚀 **Full-Stack Developer** | 💻 PHP, Laravel, JavaScript, and More  
 🌐 **Creating dynamic and scalable web applications**  
@@ -7,7 +7,7 @@
 
 ---
 
-![Banner](https://via.placeholder.com/1200x300?text=Welcome+to+My+GitHub+Profile)
+![Banner](https://github.com/user-attachments/assets/647de074-db0c-4647-b5dc-d72d3059558c)#
 
 ---
 
