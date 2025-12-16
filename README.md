@@ -57,10 +57,8 @@ A robust e-commerce platform built with **Laravel** and **MySQL**.
 
 ---
 
-### 🎮 [Tic-Tac-Toe Game](#)
-A classic game implemented in **PHP** with an interactive interface.  
+###  [CyberwareGlobarDefence](#)
 [🔗 View Project](#)
-
 ---
 
 ## 🌍 **Connect With Me**
